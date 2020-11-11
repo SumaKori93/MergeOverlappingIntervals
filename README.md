@@ -1,5 +1,10 @@
 # Merge Overlapping Intervals
 
+Table of contents
+- [Definition of the task](#definition-of-the-task)
+- [Solution](#solution)
+  * [Folder structure](#folder-structure)
+  * [How to run the script](#how-to-run-the-script)
 
 ## Definition of the task
 
