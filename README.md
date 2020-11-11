@@ -20,36 +20,37 @@ test_mergeIntervals.py
 
 where
 - mergeIntervals.py is the main python script which will be used to generate a list of intervals where overlapping intervals are merged.
+- test_mergeIntervals.py is the python script to test mergeIntervals.py functions.
 
 ### How to run the script
 
-> Please use two terminals simultaneously
+> Please follow the below instructions
 
-1. 
+1. In terminal
 
 ```console
 cd MergeOverlappingIntervals
 python mergeIntervals.py
 ```
 
-2.
+2. How to pass arguments?
 
-> How to pass arguments?
-	Enter the number of elements in list8
-	Enter numbers
-	25
-	30
-	2
-	19
-	14
-	23
-	4
-	8
-	[25, 30, 2, 19, 14, 23, 4, 8]
-	How many elements each list should have?(please enter 2)2
-	Final list with chunk of size 2 [[25, 30], [2, 19], [14, 23], [4, 8]]
-	Final merged output is:
-	[[2, 23], [25, 30]]
-
+```console
+Enter the number of elements in list8
+Enter numbers
+25
+30
+2
+19
+14
+23
+4
+8
+[25, 30, 2, 19, 14, 23, 4, 8]
+How many elements each list should have?(please enter 2)2
+Final list with chunk of size 2 [[25, 30], [2, 19], [14, 23], [4, 8]]
+Final merged output is:
+[[2, 23], [25, 30]]
+```
 
 
