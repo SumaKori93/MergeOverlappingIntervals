@@ -59,7 +59,8 @@ class MergeIntervals:
         # Using list comprehension
         final_intervals = [elements[i * n:(i + 1) * n] for i in range((len(elements) + n - 1) // n)]
         print("Final list with chunk of size 2", final_intervals)
-        print("Output:Merged list", self.merge(final_intervals))
+        print("Final merged output is:")
+        return self.merge(final_intervals)
 
 
 obj1 = MergeIntervals()
