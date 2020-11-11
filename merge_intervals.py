@@ -2,8 +2,6 @@
 # coding=UTF-8
 # Written by Suma Kori <suma.kori93@gmail.com>, November 2020
 
-from itertools import islice
-
 """This script is used to perform merging of overlapping intervals.
 
 - author: Suma Kori
@@ -28,7 +26,7 @@ class MergeIntervals:
 
         # sort the intervals
         intervals.sort(key=lambda x: x[0])
-        merged_list=[]
+        merged_list= []
         merged_list.append(intervals[0])
         for i in range(1, len(intervals)):
             last_element = merged_list[len(merged_list) - 1]
@@ -40,7 +38,7 @@ class MergeIntervals:
                 merged_list.append(intervals[i])
         return merged_list
 
-    def userinput(self):
+    def user_input(self):
 
         """
         This method provides how to pass an entire list as command line
@@ -55,16 +53,13 @@ class MergeIntervals:
         print(elements)
 
         # How many elements each list should have
-        n = int(input("How many elements each list should have?(please enter 2)"))
+        count_list = int(input("How many elements each list should have?(please enter 2)"))
         # Using list comprehension
-        final_intervals = [elements[i * n:(i + 1) * n] for i in range((len(elements) + n - 1) // n)]
+        final_intervals = [elements[i * count_list:(i + 1) * count_list] for i in range((len(elements) + count_list - 1) // count_list)]
         print("Final list with chunk of size 2", final_intervals)
         print("Final merged output is:")
         return self.merge(final_intervals)
 
 
 obj1 = MergeIntervals()
-print(obj1.userinput())
-
-
-
+print(obj1.user_input())
