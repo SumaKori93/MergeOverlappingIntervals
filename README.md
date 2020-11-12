@@ -19,13 +19,13 @@ Input: [25.30] [2.19] [14, 23] [4.8] Output: [2.23] [25.30]
 
 ```shellcript
 dir MergeOverlappingIntervals
-mergeIntervals.py
-test_mergeIntervals.py
+merge_intervals.py
+test_merge_intervals.py
 ```
 
 where
-- mergeIntervals.py is the main python script which will be used to generate a list of intervals where overlapping intervals are merged.
-- test_mergeIntervals.py is the python script to test mergeIntervals.py functions.
+- merge_intervals.py is the main python script which will be used to generate a list of intervals where overlapping intervals are merged.
+- test_merge_intervals.py is the python script to test merge_intervals.py functions.
 
 ### How to run the script
 
@@ -35,10 +35,10 @@ where
 
 ```console
 cd MergeOverlappingIntervals
-python mergeIntervals.py
+python merge_intervals.py
 ```
 
-2. How to pass arguments?
+2. How to pass Input?
 
 ```console
 Enter the number of elements in list8
@@ -57,5 +57,12 @@ Final list with chunk of size 2 [[25, 30], [2, 19], [14, 23], [4, 8]]
 Final merged output is:
 [[2, 23], [25, 30]]
 ```
+
+3. How to run test file?
+```console
+cd MergeOverlappingIntervals
+pytest test_merge_intervals.py
+```
+
 
 
