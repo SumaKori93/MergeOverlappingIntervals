@@ -21,7 +21,7 @@ def test_merge_success():
 
 def test_merge_fail():
 
-    """This method is used to test if the merging is success"""
+    """This method is used to test if the merging fails"""
     x = [[25, 30], [2, 19], [14, 23], [4, 8]]
     sc = merge_intervals.MergeIntervals()
     test_merge_interval = sc.merge(x)
